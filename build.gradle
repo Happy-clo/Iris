@@ -143,7 +143,7 @@ dependencies {
     // Shaded
     implementation 'com.dfsek:Paralithic:0.4.0'
     implementation 'io.papermc:paperlib:1.0.8'
-    implementation "net.kyori:adventure-text-minimessage:4.13.1"
+    implementation "net.kyori:adventure-text-minimessage:4.14.0"
     implementation 'net.kyori:adventure-platform-bukkit:4.3.0'
     implementation 'net.kyori:adventure-api:4.13.1'
     implementation 'io.lumine:Mythic-Dist:5.2.1'
