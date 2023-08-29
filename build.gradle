@@ -150,7 +150,7 @@ dependencies {
 
     // Dynamically Loaded
     implementation 'io.timeandspace:smoothie-map:2.0.2'
-    implementation 'it.unimi.dsi:fastutil:8.5.8'
+    implementation 'it.unimi.dsi:fastutil:8.5.12'
     implementation 'com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.4.2'
     implementation 'org.zeroturnaround:zt-zip:1.16'
     implementation 'com.google.code.gson:gson:2.9.0'
