@@ -135,7 +135,7 @@ dependencies {
 
     // Third Party Integrations
     implementation 'com.ticxo.playeranimator:PlayerAnimator:R1.2.7'
-    implementation 'com.github.oraxen:oraxen:1.160.0'
+    implementation 'com.github.oraxen:oraxen:1.163.0'
     implementation 'com.github.LoneDev6:api-itemsadder:3.4.1-r4'
     implementation 'me.clip:placeholderapi:2.11.3'
     //implementation files('libs/CustomItems.jar')
