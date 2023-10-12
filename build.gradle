@@ -146,7 +146,7 @@ dependencies {
     implementation "net.kyori:adventure-text-minimessage:4.14.0"
     implementation 'net.kyori:adventure-platform-bukkit:4.3.0'
     implementation 'net.kyori:adventure-api:4.14.0'
-    implementation 'io.lumine:Mythic-Dist:5.3.5'
+    implementation 'io.lumine:Mythic-Dist:5.4.1'
 
     // Dynamically Loaded
     implementation 'io.timeandspace:smoothie-map:2.0.2'
