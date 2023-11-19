@@ -38,7 +38,7 @@ registerCustomOutputTask('CrazyDev22', 'C://Users/Julian/Desktop/server/plugins'
 registerCustomOutputTask('Pixel', 'C://Users/repix/Iris Dimension Engine/1.20.1 - Iris Coding/plugins')
 // ========================== UNIX ==============================
 registerCustomOutputTaskUnix('CyberpwnLT', '/Users/danielmills/development/server/plugins')
-registerCustomOutputTaskUnix('PsychoLT', '/Users/brianfopiano/Desktop/REMOTES/RemoteMinecraft/plugins')
+registerCustomOutputTaskUnix('PsychoLT', '/Volumes/PRO-G40/Minecraft/MinecraftDevelopment/Server/plugins')
 // ==============================================================
 
 def NMS_BINDINGS = Map.of(
@@ -295,9 +295,16 @@ if (JavaVersion.current().toString() != "17") {
 
 task iris(type: Copy) {
     group "iris"
-    from new File(buildDir, "Iris-${version}.jar")
+    from new File(buildDir, "libs/Iris-${version}.jar")
     into buildDir
     dependsOn(build)
+}
+
+task setup() {
+    group "iris"
+    NMS_BINDINGS.each {
+        dependsOn(project(":nms:${it.key}").executeBuildTools)
+    }
 }
 
 def registerCustomOutputTask(name, path) {

@@ -141,10 +141,13 @@ public class IrisSettings {
         public int resourceLoaderCacheSize = 1_024;
         public int objectLoaderCacheSize = 4_096;
         public int scriptLoaderCacheSize = 512;
+        public boolean dynamicPerformanceMode = true;
     }
 
     @Data
     public static class IrisSettingsGeneral {
+        public boolean bootUnstable = false;
+        public boolean useIntegratedChunkHandler = false;
         public boolean commandSounds = true;
         public boolean debug = false;
         public boolean disableNMS = false;

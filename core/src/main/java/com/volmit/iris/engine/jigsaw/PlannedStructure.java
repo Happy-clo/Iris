@@ -101,7 +101,7 @@ public class PlannedStructure {
         int sz = (v.getD() / 2);
         int xx = i.getPosition().getX() + sx;
         int zz = i.getPosition().getZ() + sz;
-        RNG rngf = new RNG(Cache.key(xx, zz));
+        RNG rng = new RNG(Cache.key(xx, zz));
         int offset = i.getPosition().getY() - startHeight;
         int height;
 
@@ -208,6 +208,7 @@ public class PlannedStructure {
         for (IrisJigsawPieceConnector i : piece.getAvailableConnectors().shuffleCopy(rng)) {
             if (generateConnectorOutwards(piece, i)) {
                 b = true;
+                piece.debugPrintConnectorPositions();
             }
         }
 
